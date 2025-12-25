@@ -2,125 +2,59 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
 }
 
-/* ================= INTRO ================= */
-#intro {
-  position: fixed;
-  width: 100%;
-  height: 100vh;
-  background: #050505;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 9999;
-}
-
-/* LOGO ANIMADA */
-.logo-animada {
-  width: 300px;
-  animation: slideIn 1.5s ease-out,
-             float 3s ease-in-out infinite,
-             pulse 2.5s ease-in-out infinite;
-}
-
-/* ENTRADA LATERAL */
-@keyframes slideIn {
-  from {
-    transform: translateX(-200px);
-    opacity: 0;
-  }
-  to {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
-
-/* FLUTUAR */
-@keyframes float {
-  0%   { transform: translateY(0); }
-  50%  { transform: translateY(-15px); }
-  100% { transform: translateY(0); }
-}
-
-/* PULSAR */
-@keyframes pulse {
-  0%   { transform: scale(1); }
-  50%  { transform: scale(1.05); }
-  100% { transform: scale(1); }
-}
-
-/* SAÍDA */
-.fade-out {
-  animation: fadeOut 1s forwards;
-}
-
-@keyframes fadeOut {
-  to { opacity: 0; }
-}
-
-/* ================= SITE ================= */
-.hidden {
-  display: none;
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f2f4f8;
+  color: #333;
 }
 
 /* HERO */
 .hero {
-  height: 100vh;
   background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
   color: white;
   text-align: center;
-  padding-top: 30vh;
+  padding: 90px 20px;
 }
 
 .hero h1 {
-  font-size: 64px;
-  letter-spacing: 2px;
+  font-size: 2.6rem;
+  margin-bottom: 15px;
 }
 
 .hero p {
-  font-size: 22px;
-  margin: 20px 0 30px;
-  opacity: 0.9;
+  font-size: 1.2rem;
+  margin-bottom: 30px;
 }
 
 /* BOTÃO */
 .btn {
-  background: #25d366;
-  color: white;
-  padding: 15px 35px;
-  border-radius: 40px;
+  background: #00c6ff;
+  color: #000;
+  padding: 14px 30px;
+  border-radius: 30px;
+  font-weight: bold;
   text-decoration: none;
-  font-size: 18px;
   transition: 0.3s;
 }
 
 .btn:hover {
-  background: #1ebe5d;
-  transform: scale(1.05);
+  background: #00a3cc;
 }
 
-/* ================= SEÇÕES ================= */
+/* CARD */
 .card {
+  background: white;
   max-width: 900px;
-  margin: 60px auto;
-  background: #ffffff;
-  padding: 40px;
-  border-radius: 15px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  margin: 30px auto;
+  padding: 30px;
+  border-radius: 14px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
 }
 
 .card h2 {
-  font-size: 32px;
-  margin-bottom: 20px;
-  color: #203a43;
-}
-
-.card p {
-  font-size: 18px;
-  line-height: 1.6;
-  color: #333;
+  margin-bottom: 15px;
 }
 
 .card ul {
@@ -128,43 +62,33 @@
 }
 
 .card ul li {
-  font-size: 18px;
-  margin-bottom: 12px;
-  padding-left: 25px;
-  position: relative;
+  padding: 8px 0;
 }
 
-.card ul li::before {
-  content: "✔";
-  position: absolute;
-  left: 0;
-  color: #25d366;
-}
-
-/* ================= FOOTER ================= */
+/* FOOTER */
 footer {
-  background: #0f2027;
-  color: #ccc;
   text-align: center;
-  padding: 25px;
-  margin-top: 80px;
+  padding: 20px;
+  color: #777;
 }
 
-/* ================= WHATSAPP ================= */
+/* WHATSAPP FLOAT */
 .whatsapp-float {
   position: fixed;
-  bottom: 25px;
-  right: 25px;
+  bottom: 20px;
+  right: 20px;
   background: #25d366;
   color: white;
-  font-size: 28px;
-  padding: 15px 18px;
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
+  font-size: 28px;
+  text-align: center;
+  line-height: 60px;
   text-decoration: none;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-  transition: 0.3s;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
 }
 
 .whatsapp-float:hover {
-  transform: scale(1.15);
+  background: #1ebe5d;
 }
