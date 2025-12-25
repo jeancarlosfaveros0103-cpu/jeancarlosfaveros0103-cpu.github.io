@@ -1,83 +1,102 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Jean | IA para Sites</title>
+  <title>Jean AI | AI for Websites</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+<!-- INTRO / SPLASH SCREEN -->
+<div id="intro">
+  <img src="logo.png" alt="Jean AI Logo" class="logo-animada">
+</div>
+
+<!-- SITE PRINCIPAL -->
+<div id="site" class="hidden">
+
   <!-- HERO -->
   <header class="hero">
-    <h1>Inteligência Artificial para Sites</h1>
-    <p>Chatbots inteligentes para atendimento automático 24h</p>
+    <h1>Jean AI</h1>
+    <p>AI Solutions for Websites</p>
     <a href="https://wa.me/5527988990803" target="_blank" class="btn">
-      Entrar em contato
+      Contact on WhatsApp
     </a>
   </header>
 
-  <!-- QUEM SOU -->
+  <!-- ABOUT -->
   <section class="card">
-    <h2>👋 Quem sou eu</h2>
+    <h2>Who am I</h2>
     <p>
-      Sou desenvolvedor focado na criação de soluções de inteligência artificial
-      para melhorar o atendimento e a comunicação de empresas na internet.
+      I am a developer focused on creating artificial intelligence solutions
+      to improve customer service and online communication for businesses.
     </p>
   </section>
 
-  <!-- PROJETO -->
+  <!-- PROJECT -->
   <section class="card">
-    <h2>🤖 Projeto</h2>
+    <h2>Project</h2>
     <p>
-      <strong>Jarbas AI</strong> é um chatbot inteligente desenvolvido para responder
-      clientes automaticamente, reduzir custos e melhorar o atendimento online.
+      <strong>Jarbas AI</strong> is an intelligent chatbot designed to answer
+      customers automatically, reduce costs, and improve online support.
     </p>
   </section>
 
-  <!-- SERVIÇOS -->
+  <!-- SERVICES -->
   <section class="card">
-    <h2>🚀 Serviços</h2>
+    <h2>Services</h2>
     <ul>
-      <li>Chatbot de IA para sites</li>
-      <li>Atendimento automático 24h</li>
-      <li>IA treinada com informações do negócio</li>
-      <li>Integração simples e rápida</li>
+      <li>AI chatbot for websites</li>
+      <li>24/7 automated support</li>
+      <li>AI trained with your business data</li>
+      <li>Fast and simple integration</li>
     </ul>
   </section>
 
-  <!-- DIFERENCIAL -->
+  <!-- WHY CHOOSE -->
   <section class="card">
-    <h2>⭐ Por que me escolher?</h2>
+    <h2>Why choose me?</h2>
     <ul>
-      <li>IA personalizada para cada cliente</li>
-      <li>Projeto simples e eficiente</li>
-      <li>Contato direto com o desenvolvedor</li>
-      <li>Solução moderna e acessível</li>
+      <li>Custom AI for each client</li>
+      <li>Modern and efficient solution</li>
+      <li>Direct contact with the developer</li>
+      <li>Affordable and scalable project</li>
     </ul>
   </section>
 
-  <!-- CONTATO -->
-  <section class="card" id="contato">
-    <h2>📩 Contato</h2>
+  <!-- CONTACT -->
+  <section class="card">
+    <h2>Contact</h2>
     <p>
-      WhatsApp:
-      <strong>(27) 98899-0803</strong>
+      WhatsApp: <strong>+55 27 98899-0803</strong>
     </p>
   </section>
 
   <!-- FOOTER -->
   <footer>
-    <p>© 2025 — Jean | IA para Sites</p>
+    <p>© 2025 — Jean AI | AI for Websites</p>
   </footer>
 
-  <!-- BOTÃO WHATSAPP -->
+  <!-- WHATSAPP FLOAT -->
   <a href="https://wa.me/5527988990803"
      class="whatsapp-float"
      target="_blank">
     💬
   </a>
 
+</div>
+
+<!-- SCRIPT DA INTRO -->
+<script>
+  setTimeout(() => {
+    document.getElementById("intro").classList.add("fade-out");
+    setTimeout(() => {
+      document.getElementById("intro").style.display = "none";
+      document.getElementById("site").classList.remove("hidden");
+    }, 1000);
+  }, 10000); // 10 segundos
+</script>
+
 </body>
 </html>
-
