@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -5,22 +6,56 @@
   <title>Jean | IA para Sites</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <style>
+    /* Botão de idioma fixo no topo */
+    #translateBtn {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      padding: 10px 15px;
+      cursor: pointer;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      z-index: 1000;
+    }
+  </style>
 </head>
 <body>
 
+  <!-- BOTÃO DE IDIOMA -->
+  <button id="translateBtn">English</button>
+
   <!-- HERO -->
   <header class="hero">
-    <h1>Inteligência Artificial para Sites</h1>
-    <p>Chatbots inteligentes para atendimento automático 24h</p>
-    <a href="https://wa.me/5527988990803" target="_blank" class="btn">
-      Entrar em contato
+    <h1 data-en="Artificial Intelligence for Websites" 
+        data-pt="Inteligência Artificial para Sites" 
+        data-es="Inteligencia Artificial para Sitios Web" 
+        data-zh="网站人工智能">Inteligência Artificial para Sites</h1>
+    <p data-en="Smart chatbots for 24h automated service" 
+       data-pt="Chatbots inteligentes para atendimento automático 24h" 
+       data-es="Chatbots inteligentes para servicio automatizado 24h" 
+       data-zh="智能聊天机器人提供24小时自动服务">
+      Chatbots inteligentes para atendimento automático 24h
+    </p>
+    <a href="https://wa.me/5527988990803" target="_blank" class="btn"
+       data-en="Contact me" 
+       data-pt="Entrar em contato" 
+       data-es="Contáctame" 
+       data-zh="联系我">
+       Entrar em contato
     </a>
   </header>
 
   <!-- QUEM SOU -->
   <section class="card">
-    <h2>👋 Quem sou eu</h2>
-    <p>
+    <h2 data-en="👋 About Me" data-pt="👋 Quem sou eu" data-es="👋 Quién soy" data-zh="👋 关于我">👋 Quem sou eu</h2>
+    <p data-en="I am a developer focused on creating AI solutions to improve online business communication and support." 
+       data-pt="Sou desenvolvedor focado na criação de soluções de inteligência artificial para melhorar o atendimento e a comunicação de empresas na internet." 
+       data-es="Soy desarrollador enfocado en crear soluciones de IA para mejorar la comunicación y soporte online de empresas." 
+       data-zh="我是一名开发者，专注于创建人工智能解决方案以改善企业的在线沟通和支持。">
       Sou desenvolvedor focado na criação de soluções de inteligência artificial
       para melhorar o atendimento e a comunicação de empresas na internet.
     </p>
@@ -28,8 +63,11 @@
 
   <!-- PROJETO -->
   <section class="card">
-    <h2>🤖 Projeto</h2>
-    <p>
+    <h2 data-en="🤖 Project" data-pt="🤖 Projeto" data-es="🤖 Proyecto" data-zh="🤖 项目">🤖 Projeto</h2>
+    <p data-en="<strong>Jarbas AI</strong> is a smart chatbot designed to automatically respond to customers, reduce costs, and improve online service." 
+       data-pt="<strong>Jarbas AI</strong> é um chatbot inteligente desenvolvido para responder clientes automaticamente, reduzir custos e melhorar o atendimento online." 
+       data-es="<strong>Jarbas AI</strong> es un chatbot inteligente diseñado para responder automáticamente a clientes, reducir costos y mejorar el servicio online." 
+       data-zh="<strong>Jarbas AI</strong> 是一个智能聊天机器人，旨在自动回复客户，降低成本并改善在线服务。">
       <strong>Jarbas AI</strong> é um chatbot inteligente desenvolvido para responder
       clientes automaticamente, reduzir custos e melhorar o atendimento online.
     </p>
@@ -37,46 +75,67 @@
 
   <!-- SERVIÇOS -->
   <section class="card">
-    <h2>🚀 Serviços</h2>
+    <h2 data-en="🚀 Services" data-pt="🚀 Serviços" data-es="🚀 Servicios" data-zh="🚀 服务">🚀 Serviços</h2>
     <ul>
-      <li>Chatbot de IA para sites</li>
-      <li>Atendimento automático 24h</li>
-      <li>IA treinada com informações do negócio</li>
-      <li>Integração simples e rápida</li>
+      <li data-en="AI chatbot for websites" data-pt="Chatbot de IA para sites" data-es="Chatbot de IA para sitios web" data-zh="网站人工智能聊天机器人">Chatbot de IA para sites</li>
+      <li data-en="24h automated service" data-pt="Atendimento automático 24h" data-es="Servicio automatizado 24h" data-zh="24小时自动服务">Atendimento automático 24h</li>
+      <li data-en="AI trained with business information" data-pt="IA treinada com informações do negócio" data-es="IA entrenada con información del negocio" data-zh="使用业务信息训练的人工智能">IA treinada com informações do negócio</li>
+      <li data-en="Simple and fast integration" data-pt="Integração simples e rápida" data-es="Integración simple y rápida" data-zh="简单快速的集成">Integração simples e rápida</li>
     </ul>
   </section>
 
   <!-- DIFERENCIAL -->
   <section class="card">
-    <h2>⭐ Por que me escolher?</h2>
+    <h2 data-en="⭐ Why choose me?" data-pt="⭐ Por que me escolher?" data-es="⭐ ¿Por qué elegirme?" data-zh="⭐ 为什么选择我？">⭐ Por que me escolher?</h2>
     <ul>
-      <li>IA personalizada para cada cliente</li>
-      <li>Projeto simples e eficiente</li>
-      <li>Contato direto com o desenvolvedor</li>
-      <li>Solução moderna e acessível</li>
+      <li data-en="Custom AI for each client" data-pt="IA personalizada para cada cliente" data-es="IA personalizada para cada cliente" data-zh="为每位客户定制人工智能">IA personalizada para cada cliente</li>
+      <li data-en="Simple and efficient project" data-pt="Projeto simples e eficiente" data-es="Proyecto simple y eficiente" data-zh="简单高效的项目">Projeto simples e eficiente</li>
+      <li data-en="Direct contact with the developer" data-pt="Contato direto com o desenvolvedor" data-es="Contacto directo con el desarrollador" data-zh="与开发者直接联系">Contato direto com o desenvolvedor</li>
+      <li data-en="Modern and accessible solution" data-pt="Solução moderna e acessível" data-es="Solución moderna y accesible" data-zh="现代且易于访问的解决方案">Solução moderna e acessível</li>
     </ul>
   </section>
 
   <!-- CONTATO -->
   <section class="card" id="contato">
-    <h2>📩 Contato</h2>
-    <p>
-      WhatsApp:
-      <strong>(27) 98899-0803</strong>
+    <h2 data-en="📩 Contact" data-pt="📩 Contato" data-es="📩 Contacto" data-zh="📩 联系方式">📩 Contato</h2>
+    <p data-en="WhatsApp: <strong>(27) 98899-0803</strong>" 
+       data-pt="WhatsApp: <strong>(27) 98899-0803</strong>" 
+       data-es="WhatsApp: <strong>(27) 98899-0803</strong>" 
+       data-zh="WhatsApp: <strong>(27) 98899-0803</strong>">
+      WhatsApp: <strong>(27) 98899-0803</strong>
     </p>
   </section>
 
   <!-- FOOTER -->
   <footer>
-    <p>© 2025 — Jean | IA para Sites</p>
+    <p data-en="© 2025 — Jean | AI for Websites" data-pt="© 2025 — Jean | IA para Sites" data-es="© 2025 — Jean | IA para Sitios Web" data-zh="© 2025 — Jean | 网站人工智能">© 2025 — Jean | IA para Sites</p>
   </footer>
 
   <!-- BOTÃO WHATSAPP -->
-  <a href="https://wa.me/5527988990803"
-     class="whatsapp-float"
-     target="_blank">
-    💬
-  </a>
+  <a href="https://wa.me/5527988990803" class="whatsapp-float" target="_blank">💬</a>
+
+  <!-- SCRIPT DE TRADUÇÃO -->
+  <script>
+    const btn = document.getElementById('translateBtn');
+    const languages = ['en', 'pt', 'es', 'zh'];
+    const langNames = { en: 'English', pt: 'Português', es: 'Español', zh: '中文' };
+    let currentIndex = 1; // Começa em português
+
+    btn.addEventListener('click', () => {
+      // Passa para o próximo idioma
+      currentIndex = (currentIndex + 1) % languages.length;
+      const lang = languages[currentIndex];
+
+      // Atualiza todos os textos
+      document.querySelectorAll('[data-en]').forEach(el => {
+        el.innerHTML = el.getAttribute(`data-${lang}`);
+      });
+
+      // Atualiza o texto do botão para mostrar a próxima língua
+      const nextIndex = (currentIndex + 1) % languages.length;
+      btn.textContent = langNames[languages[nextIndex]];
+    });
+  </script>
 
 </body>
 </html>
